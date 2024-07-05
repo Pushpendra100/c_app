@@ -1,4 +1,4 @@
-1. npx create-expo-app ./  => create an expo project
+1. npx create-expo-app@latest ./  => create an expo project
 2. npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar  => all these packages are important for smooth working of expo's file based routing system
 3. setup entry point to "expo-router/entry"
 
