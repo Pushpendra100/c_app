@@ -68,6 +68,20 @@ https://github.com/appwrite/sdk-for-react-native
 
 25. npx expo install expo-image-picker => another picker
 
+26. Publish on expo app store - only android people can access from this
+  - npm install -g expo-cli
+  - expo publish
+
+27. Building apk 
+  - npm install -g eas-cli
+  - eas build -p android  
+  - you will get some links, open that expo eas link and there download android play store build from the link => from here you will get .aab file
+  - then download the bundletool jar file from https://github.com/google/bundletool/releases
+  - create a new folder named output and put both .aab file and the bundletool in that output folder
+  - open terminal and cd to the output folder
+  - run command => java -jar <bundletool.jar> build-apks --bundle=<filename.aab> --output=output.apks --mode=universal
+  - it will create output.apks file inside the output folder itself.
+
 ### resources
 
 - images in react native = https://medium.com/swlh/how-to-obtain-a-uri-for-an-image-asset-in-react-native-with-expo-88dfbe1023b8
